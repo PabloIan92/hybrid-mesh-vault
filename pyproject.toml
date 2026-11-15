@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybrid-mesh-vault"
+version = "1.0.0"
+authors = [
+  { name="Pablo Ian Laurino", email="pabloianlaurino@gmail.com" },
+]
+description = "Zero-Cost Disaggregated Compute & Storage for AI Agents & Homelabs via Tailscale Mesh"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Distributed Computing",
+]
+
+[project.scripts]
+mesh-vault = "mesh_vault.cli:main"
